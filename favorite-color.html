@@ -15,7 +15,7 @@
 	<body>
 		<h1>What is your favorite color?</h1> 
 
-		<select id="colorpicker" onchange="chooseColor();">
+		<select id="colorpicker">
 			<option>Red</option>
 			<option>Blue</option> 
 			<option>Green</option> 
@@ -31,7 +31,7 @@
 		<div style="height:100px; width:100px"></div>
 		<script>
 			var selector = document.getElementById("colorpicker");
-			selector.addEventListener("change",chooseColor )
+			selector.addEventListener("change", chooseColor )
 
 			function chooseColor()
 			{
