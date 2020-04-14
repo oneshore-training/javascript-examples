@@ -1,54 +1,16 @@
 <html>
 	<head>
-		<title>Javascript Examples</title>
-		<style>
-			#box {
-				background-color: orange;
-			}
+		<title>One Shore Training - Javascript Examples</title>
+		<link href="style.css" rel="stylesheet">
 
-			div {
-				border: 2px dashed black; 
-				margin: 10px;
-			}
-		</style>
 	</head>
 	<body>
-		<h1>What is your favorite color?</h1> 
+		<img src="https://training.one-shore.com/images/one-shore-logo.png"/>
+		<h1>Javascript Examples</h1> 
 
-		<select id="colorpicker">
-			<option>Red</option>
-			<option>Blue</option> 
-			<option>Green</option> 
-			<option>Yellow</option> 
-			<option selected >Orange</option> 
-			<option>Purple</option> 
-		</select>
-	
-		<div id="box" style="height:100px; width:100px">
-		...
-		</div>
-
-			var selector = document.getElementById("colorpicker");
-			selector.addEventListener("change", chooseColor )
-
-			function chooseColor()
-			{
-				var selector = document.getElementById("colorpicker");
-				console.log("selector", selector);
-
-				var index = selector.selectedIndex;
-				console.log("index", index)
-
-				var color = selector.options[index].innerText;
-				console.log("color", color);
-
-				alert('your favorite color is: ' + color);
-
-				var box = document.querySelector("#box");
-				box.style.backgroundColor = color;
-				box.innerText = color;
-			}
-
-		</script>
+		
+		<li>
+			<a href="/favorite-color.html">Favorite Color</a>
+		</li>
 	</body>
 </html>

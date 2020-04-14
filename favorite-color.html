@@ -1,14 +1,12 @@
 <html>
 	<head>
-		<title>Javascript Examples</title>
+		<title>One Shore Training - Favorite Color - Javascript Examples</title>
+		<link href="style.css" rel="stylesheet">
 		<style>
+	
 			#box {
 				background-color: orange;
-			}
-
-			div {
-				border: 2px dashed black; 
-				margin: 10px;
+				border: 2px dashed black;
 			}
 		</style>
 	</head>
@@ -28,7 +26,6 @@
 		color
 		</div>
 
-		<div style="height:100px; width:100px"></div>
 		<script>
 			var selector = document.getElementById("colorpicker");
 			selector.addEventListener("change", chooseColor )
@@ -50,7 +47,6 @@
 				box.style.backgroundColor = color;
 				box.innerText = color;
 			}
-
 		</script>
 	</body>
 </html>
